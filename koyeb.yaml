@@ -1,0 +1,21 @@
+services:
+  backend:
+    type: docker
+    docker:
+      dockerfile: backend/Dockerfile
+      context: .
+    env:
+      PAYMENT_MODE: sandbox
+      MARKET_MODE: simulated
+      TZ: Asia/Dhaka
+    ports:
+      - port: 4000
+        protocol: http
+  frontend:
+    type: docker
+    docker:
+      dockerfile: frontend/Dockerfile
+      context: .
+    ports:
+      - port: 3000
+        protocol: http

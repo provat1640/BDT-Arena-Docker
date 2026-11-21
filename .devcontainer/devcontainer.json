@@ -1,0 +1,16 @@
+{
+  "name": "BDT Arena Docker",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bullseye",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers/features/java:1": { "version": "21" }
+  },
+  "forwardPorts": [3000, 4000, 5432],
+  "portsAttributes": {
+    "3000": { "label": "Web frontend", "onAutoForward": "openBrowser", "visibility": "public" },
+    "4000": { "label": "Backend API", "onAutoForward": "silent", "visibility": "public" },
+    "5432": { "label": "PostgreSQL", "onAutoForward": "silent", "visibility": "private" }
+  },
+  "postCreateCommand": "test -f .env || cp .env.example .env; npm install --prefix backend && npm install --prefix frontend",
+  "remoteUser": "node"
+}
