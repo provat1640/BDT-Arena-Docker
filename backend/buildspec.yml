@@ -1,0 +1,36 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+  pre_build:
+    commands:
+      - echo "Installing backend dependencies..."
+      - cd backend && npm install
+      - echo "Installing frontend dependencies..."
+      - cd ../frontend && npm install
+  build:
+    commands:
+      - echo "Building backend..."
+      - cd ../backend && npm run build
+      - echo "Building frontend..."
+      - cd ../frontend && npm run build
+  post_build:
+    commands:
+      - echo "Build completed on `date`"
+
+artifacts:
+  files:
+    - backend/dist/**/*
+    - backend/migrations/**/*
+    - backend/node_modules/**/*
+    - frontend/dist/**/*
+    - docker-compose.yml
+    - .env.production
+  name: BDTArenaBuildArtifact
+
+cache:
+  paths:
+    - 'backend/node_modules/**/*'
+    - 'frontend/node_modules/**/*'

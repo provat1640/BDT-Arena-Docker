@@ -1,0 +1,355 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'CloudFormation template for BDT Arena application infrastructure'
+
+Parameters:
+  Environment:
+    Type: String
+    Default: staging
+    AllowedValues:
+      - development
+      - staging
+      - production
+    Description: Deployment environment
+
+  InstanceType:
+    Type: String
+    Default: t3.medium
+    AllowedValues:
+      - t3.micro
+      - t3.small
+      - t3.medium
+      - t3.large
+    Description: EC2 instance type
+
+  DBInstanceClass:
+    Type: String
+    Default: db.t3.small
+    AllowedValues:
+      - db.t3.micro
+      - db.t3.small
+      - db.t3.medium
+    Description: RDS instance class
+
+  DBAllocatedStorage:
+    Type: Number
+    Default: 100
+    MinValue: 20
+    MaxValue: 65536
+    Description: RDS allocated storage in GB
+
+Conditions:
+  IsProduction: !Equals [ !Ref Environment, production ]
+  IsProductionOrStaging: !Or
+    - !Equals [ !Ref Environment, production ]
+    - !Equals [ !Ref Environment, staging ]
+
+Resources:
+  # VPC
+  BDTArenaVPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 10.0.0.0/16
+      EnableDnsHostnames: true
+      EnableDnsSupport: true
+      Tags:
+        - Key: Name
+          Value: !Sub 'bdt-arena-vpc-${Environment}'
+
+  # Public Subnets
+  PublicSubnet1:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref BDTArenaVPC
+      CidrBlock: 10.0.1.0/24
+      AvailabilityZone: !Select [ 0, !GetAZs '' ]
+      MapPublicIpOnLaunch: true
+      Tags:
+        - Key: Name
+          Value: !Sub 'bdt-arena-public-subnet-1-${Environment}'
+
+  PublicSubnet2:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref BDTArenaVPC
+      CidrBlock: 10.0.2.0/24
+      AvailabilityZone: !Select [ 1, !GetAZs '' ]
+      MapPublicIpOnLaunch: true
+      Tags:
+        - Key: Name
+          Value: !Sub 'bdt-arena-public-subnet-2-${Environment}'
+
+  # Private Subnets
+  PrivateSubnet1:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref BDTArenaVPC
+      CidrBlock: 10.0.10.0/24
+      AvailabilityZone: !Select [ 0, !GetAZs '' ]
+      Tags:
+        - Key: Name
+          Value: !Sub 'bdt-arena-private-subnet-1-${Environment}'
+
+  PrivateSubnet2:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref BDTArenaVPC
+      CidrBlock: 10.0.11.0/24
+      AvailabilityZone: !Select [ 1, !GetAZs '' ]
+      Tags:
+        - Key: Name
+          Value: !Sub 'bdt-arena-private-subnet-2-${Environment}'
+
+  # Internet Gateway
+  InternetGateway:
+    Type: AWS::EC2::InternetGateway
+    Properties:
+      Tags:
+        - Key: Name
+          Value: !Sub 'bdt-arena-igw-${Environment}'
+
+  AttachGateway:
+    Type: AWS::EC2::VPCGatewayAttachment
+    Properties:
+      VpcId: !Ref BDTArenaVPC
+      InternetGatewayId: !Ref InternetGateway
+
+  # Route Tables
+  PublicRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref BDTArenaVPC
+      Tags:
+        - Key: Name
+          Value: !Sub 'bdt-arena-public-rt-${Environment}'
+
+  PublicRoute:
+    Type: AWS::EC2::Route
+    DependsOn: AttachGateway
+    Properties:
+      RouteTableId: !Ref PublicRouteTable
+      DestinationCidrBlock: 0.0.0.0/0
+      GatewayId: !Ref InternetGateway
+
+  PublicSubnet1RouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PublicSubnet1
+      RouteTableId: !Ref PublicRouteTable
+
+  PublicSubnet2RouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PublicSubnet2
+      RouteTableId: !Ref PublicRouteTable
+
+  # Security Groups
+  ALBSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Security group for ALB
+      VpcId: !Ref BDTArenaVPC
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0
+        - IpProtocol: tcp
+          FromPort: 443
+          ToPort: 443
+          CidrIp: 0.0.0.0/0
+      Tags:
+        - Key: Name
+          Value: !Sub 'bdt-arena-alb-sg-${Environment}'
+
+  EBSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Security group for Elastic Beanstalk instances
+      VpcId: !Ref BDTArenaVPC
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 8081
+          ToPort: 8081
+          SourceSecurityGroupId: !Ref ALBSecurityGroup
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 0.0.0.0/0  # Restrict this in production
+      Tags:
+        - Key: Name
+          Value: !Sub 'bdt-arena-eb-sg-${Environment}'
+
+  RDSSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Security group for RDS
+      VpcId: !Ref BDTArenaVPC
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 5432
+          ToPort: 5432
+          SourceSecurityGroupId: !Ref EBSecurityGroup
+      Tags:
+        - Key: Name
+          Value: !Sub 'bdt-arena-rds-sg-${Environment}'
+
+  # RDS Database
+  DBSubnetGroup:
+    Type: AWS::RDS::DBSubnetGroup
+    Properties:
+      DBSubnetGroupDescription: Subnet group for RDS
+      SubnetIds:
+        - !Ref PrivateSubnet1
+        - !Ref PrivateSubnet2
+      Tags:
+        - Key: Name
+          Value: !Sub 'bdt-arena-db-subnet-${Environment}'
+
+  BDTArenaDatabase:
+    Type: AWS::RDS::DBInstance
+    DeletionPolicy: Snapshot
+    Properties:
+      DBInstanceIdentifier: !Sub 'bdt-arena-db-${Environment}'
+      DBInstanceClass: !Ref DBInstanceClass
+      Engine: postgres
+      EngineVersion: '15.3'
+      MasterUsername: admin
+      MasterUserPassword: !Sub
+        - '{{resolve:secretsmanager:${SecretArn}:SecretString:password}}'
+        - SecretArn: !Ref DBSecret
+      AllocatedStorage: !Ref DBAllocatedStorage
+      StorageType: gp3
+      StorageEncrypted: true
+      VPCSecurityGroups:
+        - !Ref RDSSecurityGroup
+      DBSubnetGroupName: !Ref DBSubnetGroup
+      MultiAZ: !If [ IsProduction, true, false ]
+      BackupRetentionPeriod: !If [ IsProduction, 30, 7 ]
+      PreferredBackupWindow: '03:00-04:00'
+      PreferredMaintenanceWindow: 'sun:04:00-sun:05:00'
+      EnableCloudwatchLogsExports:
+        - postgresql
+      Tags:
+        - Key: Name
+          Value: !Sub 'bdt-arena-db-${Environment}'
+
+  # Secrets Manager
+  DBSecret:
+    Type: AWS::SecretsManager::Secret
+    Properties:
+      Name: !Sub 'bdt-arena/db/${Environment}'
+      Description: RDS database password
+      GenerateSecretString:
+        SecretStringTemplate: '{"username": "admin"}'
+        GenerateStringKey: password
+        PasswordLength: 32
+        ExcludeCharacters: '"@/\'
+
+  # Elastic Beanstalk Application
+  BDTArenaApplication:
+    Type: AWS::ElasticBeanstalk::Application
+    Properties:
+      ApplicationName: BDT_Arena
+      Description: Bangladesh Gaming and Trading Platform
+
+  BDTArenaEnvironment:
+    Type: AWS::ElasticBeanstalk::Environment
+    DependsOn: BDTArenaDatabase
+    Properties:
+      ApplicationName: !Ref BDTArenaApplication
+      EnvironmentName: !Sub 'bdt-arena-env-${Environment}'
+      SolutionStackName: '64bit Amazon Linux 2 v5.8.10 running Node.js 18'
+      OptionSettings:
+        # Instance settings
+        - Namespace: aws:autoscaling:launchconfiguration
+          OptionName: InstanceType
+          Value: !Ref InstanceType
+        - Namespace: aws:autoscaling:launchconfiguration
+          OptionName: IamInstanceProfile
+          Value: !Ref EBInstanceProfile
+
+        # Auto Scaling
+        - Namespace: aws:autoscaling:asg
+          OptionName: MinSize
+          Value: !If [ IsProduction, '2', '1' ]
+        - Namespace: aws:autoscaling:asg
+          OptionName: MaxSize
+          Value: !If [ IsProduction, '6', '2' ]
+
+        # Load Balancer
+        - Namespace: aws:elasticbeanstalk:environment
+          OptionName: LoadBalancerType
+          Value: application
+
+        # Environment properties
+        - Namespace: aws:elasticbeanstalk:application:environment
+          OptionName: NODE_ENV
+          Value: !Ref Environment
+        - Namespace: aws:elasticbeanstalk:application:environment
+          OptionName: PAYMENT_MODE
+          Value: !If [ IsProduction, 'production', 'sandbox' ]
+        - Namespace: aws:elasticbeanstalk:application:environment
+          OptionName: MARKET_MODE
+          Value: simulated
+
+  # IAM Role for Elastic Beanstalk EC2 instances
+  EBRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: ec2.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/AWSElasticBeanstalkWorkerTier
+        - arn:aws:iam::aws:policy/CloudWatchAgentServerPolicy
+      Policies:
+        - PolicyName: SecretsManagerAccess
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - secretsmanager:GetSecretValue
+                Resource: !GetAtt DBSecret.Arn
+
+  EBInstanceProfile:
+    Type: AWS::IAM::InstanceProfile
+    Properties:
+      Roles:
+        - !Ref EBRole
+
+  # CloudWatch Log Group
+  ApplicationLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub '/aws/elasticbeanstalk/bdt-arena/${Environment}'
+      RetentionInDays: !If [ IsProduction, 30, 7 ]
+
+Outputs:
+  VPCId:
+    Description: VPC ID
+    Value: !Ref BDTArenaVPC
+    Export:
+      Name: !Sub '${AWS::StackName}-VPC'
+
+  DatabaseEndpoint:
+    Description: Database endpoint
+    Value: !GetAtt BDTArenaDatabase.Endpoint.Address
+    Export:
+      Name: !Sub '${AWS::StackName}-DBEndpoint'
+
+  EnvironmentName:
+    Description: Elastic Beanstalk environment name
+    Value: !Ref BDTArenaEnvironment
+    Export:
+      Name: !Sub '${AWS::StackName}-EBEnvironment'
+
+  ApplicationURL:
+    Description: Application URL
+    Value: !GetAtt BDTArenaEnvironment.EndpointURL
+    Export:
+      Name: !Sub '${AWS::StackName}-AppURL'

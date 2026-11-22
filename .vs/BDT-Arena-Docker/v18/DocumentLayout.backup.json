@@ -1,0 +1,450 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\.copilot\\plans\\plan-aws-elastic-beanstalk-environment-variables-reference.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\.copilot\\plans\\plan-cicd-testing-workflow-for-bdt-arena.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\START_HERE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\START_HERE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\.copilot\\plans\\plan-complete-backend-admin-implementation-with-payment,-auth-logging.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\.ebextensions\\01_environment.config||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\.ebextensions\\01_environment.config||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\buildspec.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\buildspec.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\DEPLOYMENT_GUIDE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\DEPLOYMENT_GUIDE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\deploy.sh||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\deploy.sh||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\buildspec-docker.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\buildspec-docker.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\cloudformation.yaml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\cloudformation.yaml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\setup-aws.sh||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\setup-aws.sh||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\ELASTIC_BEANSTALK_DEPLOYMENT.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\ELASTIC_BEANSTALK_DEPLOYMENT.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\eb-deploy-interactive.sh||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\eb-deploy-interactive.sh||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\eb-deploy-auto.sh||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\eb-deploy-auto.sh||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\STEP_BY_STEP_DEPLOYMENT.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\STEP_BY_STEP_DEPLOYMENT.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\QUICK_REFERENCE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\QUICK_REFERENCE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\DEPLOYMENT_INDEX.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\DEPLOYMENT_INDEX.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\README_DEPLOYMENT.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\README_DEPLOYMENT.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\DEPLOYMENT_VISUAL_GUIDE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\DEPLOYMENT_VISUAL_GUIDE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\DEPLOYMENT_SUMMARY.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\DEPLOYMENT_SUMMARY.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\COMPLETE_INDEX.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\COMPLETE_INDEX.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\DEPLOYMENT_COMPLETE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\DEPLOYMENT_COMPLETE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\DEPLOYMENT_CHECKLIST.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\DEPLOYMENT_CHECKLIST.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\.copilot\\plans\\plan-cicd-testing-workflow-for-bdt-arena.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\src\\index.ts||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\index.ts||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "plan-aws-elastic-beanstalk-environment-variables-reference.md [Preview]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\.copilot\\plans\\plan-aws-elastic-beanstalk-environment-variables-reference.md",
+              "RelativeDocumentMoniker": "..\\..\\..\\.copilot\\plans\\plan-aws-elastic-beanstalk-environment-variables-reference.md",
+              "ToolTip": "C:\\Users\\Lenovo\\.copilot\\plans\\plan-aws-elastic-beanstalk-environment-variables-reference.md [Preview]",
+              "RelativeToolTip": "..\\..\\..\\.copilot\\plans\\plan-aws-elastic-beanstalk-environment-variables-reference.md [Preview]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-11-22T17:04:42.258Z",
+              "EditorCaption": " [Preview]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "index.ts",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\src\\index.ts",
+              "RelativeDocumentMoniker": "backend\\src\\index.ts",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\src\\index.ts",
+              "RelativeToolTip": "backend\\src\\index.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-11-22T17:00:08.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "plan-cicd-testing-workflow-for-bdt-arena.md",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\.copilot\\plans\\plan-cicd-testing-workflow-for-bdt-arena.md",
+              "RelativeDocumentMoniker": "..\\..\\..\\.copilot\\plans\\plan-cicd-testing-workflow-for-bdt-arena.md",
+              "ToolTip": "C:\\Users\\Lenovo\\.copilot\\plans\\plan-cicd-testing-workflow-for-bdt-arena.md",
+              "RelativeToolTip": "..\\..\\..\\.copilot\\plans\\plan-cicd-testing-workflow-for-bdt-arena.md",
+              "ViewState": "AgIAABcAAAAAAAAAAABBwBgAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-11-22T16:58:14.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "plan-cicd-testing-workflow-for-bdt-arena.md [Preview]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\.copilot\\plans\\plan-cicd-testing-workflow-for-bdt-arena.md",
+              "RelativeDocumentMoniker": "..\\..\\..\\.copilot\\plans\\plan-cicd-testing-workflow-for-bdt-arena.md",
+              "ToolTip": "C:\\Users\\Lenovo\\.copilot\\plans\\plan-cicd-testing-workflow-for-bdt-arena.md [Preview]",
+              "RelativeToolTip": "..\\..\\..\\.copilot\\plans\\plan-cicd-testing-workflow-for-bdt-arena.md [Preview]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-11-22T16:46:17.216Z",
+              "EditorCaption": " [Preview]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DEPLOYMENT_CHECKLIST.md",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\DEPLOYMENT_CHECKLIST.md",
+              "RelativeDocumentMoniker": "backend\\DEPLOYMENT_CHECKLIST.md",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\DEPLOYMENT_CHECKLIST.md",
+              "RelativeToolTip": "backend\\DEPLOYMENT_CHECKLIST.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJkBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-11-22T16:33:09.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DEPLOYMENT_COMPLETE.md",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\DEPLOYMENT_COMPLETE.md",
+              "RelativeDocumentMoniker": "backend\\DEPLOYMENT_COMPLETE.md",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\DEPLOYMENT_COMPLETE.md",
+              "RelativeToolTip": "backend\\DEPLOYMENT_COMPLETE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPUBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-11-22T16:32:02.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "COMPLETE_INDEX.md",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\COMPLETE_INDEX.md",
+              "RelativeDocumentMoniker": "backend\\COMPLETE_INDEX.md",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\COMPLETE_INDEX.md",
+              "RelativeToolTip": "backend\\COMPLETE_INDEX.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-11-22T16:31:21.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "START_HERE.md",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\START_HERE.md",
+              "RelativeDocumentMoniker": "backend\\START_HERE.md",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\START_HERE.md",
+              "RelativeToolTip": "backend\\START_HERE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMYBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-11-22T16:30:30.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DEPLOYMENT_SUMMARY.md",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\DEPLOYMENT_SUMMARY.md",
+              "RelativeDocumentMoniker": "backend\\DEPLOYMENT_SUMMARY.md",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\DEPLOYMENT_SUMMARY.md",
+              "RelativeToolTip": "backend\\DEPLOYMENT_SUMMARY.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOgBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-11-22T16:29:42.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DEPLOYMENT_VISUAL_GUIDE.md",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\DEPLOYMENT_VISUAL_GUIDE.md",
+              "RelativeDocumentMoniker": "backend\\DEPLOYMENT_VISUAL_GUIDE.md",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\DEPLOYMENT_VISUAL_GUIDE.md",
+              "RelativeToolTip": "backend\\DEPLOYMENT_VISUAL_GUIDE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-11-22T16:29:03.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "README_DEPLOYMENT.md",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\README_DEPLOYMENT.md",
+              "RelativeDocumentMoniker": "backend\\README_DEPLOYMENT.md",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\README_DEPLOYMENT.md",
+              "RelativeToolTip": "backend\\README_DEPLOYMENT.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-11-22T16:28:14.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DEPLOYMENT_INDEX.md",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\DEPLOYMENT_INDEX.md",
+              "RelativeDocumentMoniker": "backend\\DEPLOYMENT_INDEX.md",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\DEPLOYMENT_INDEX.md",
+              "RelativeToolTip": "backend\\DEPLOYMENT_INDEX.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-11-22T16:26:50.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "QUICK_REFERENCE.md",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\QUICK_REFERENCE.md",
+              "RelativeDocumentMoniker": "backend\\QUICK_REFERENCE.md",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\QUICK_REFERENCE.md",
+              "RelativeToolTip": "backend\\QUICK_REFERENCE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOkBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-11-22T16:26:08.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "STEP_BY_STEP_DEPLOYMENT.md",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\STEP_BY_STEP_DEPLOYMENT.md",
+              "RelativeDocumentMoniker": "backend\\STEP_BY_STEP_DEPLOYMENT.md",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\STEP_BY_STEP_DEPLOYMENT.md",
+              "RelativeToolTip": "backend\\STEP_BY_STEP_DEPLOYMENT.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALICAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-11-22T16:25:33.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "eb-deploy-auto.sh",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\eb-deploy-auto.sh",
+              "RelativeDocumentMoniker": "backend\\eb-deploy-auto.sh",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\eb-deploy-auto.sh",
+              "RelativeToolTip": "backend\\eb-deploy-auto.sh",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIgBAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2026-11-22T16:24:44.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "eb-deploy-interactive.sh",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\eb-deploy-interactive.sh",
+              "RelativeDocumentMoniker": "backend\\eb-deploy-interactive.sh",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\eb-deploy-interactive.sh",
+              "RelativeToolTip": "backend\\eb-deploy-interactive.sh",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcCAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2026-11-22T16:24:11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ELASTIC_BEANSTALK_DEPLOYMENT.md",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\ELASTIC_BEANSTALK_DEPLOYMENT.md",
+              "RelativeDocumentMoniker": "backend\\ELASTIC_BEANSTALK_DEPLOYMENT.md",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\ELASTIC_BEANSTALK_DEPLOYMENT.md",
+              "RelativeToolTip": "backend\\ELASTIC_BEANSTALK_DEPLOYMENT.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPwDAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-11-22T16:23:22.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "setup-aws.sh",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\setup-aws.sh",
+              "RelativeDocumentMoniker": "backend\\setup-aws.sh",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\setup-aws.sh",
+              "RelativeToolTip": "backend\\setup-aws.sh",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEBAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2026-11-22T15:54:39.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "cloudformation.yaml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\cloudformation.yaml",
+              "RelativeDocumentMoniker": "backend\\cloudformation.yaml",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\cloudformation.yaml",
+              "RelativeToolTip": "backend\\cloudformation.yaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-11-22T15:54:16.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "buildspec-docker.yml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\buildspec-docker.yml",
+              "RelativeDocumentMoniker": "backend\\buildspec-docker.yml",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\buildspec-docker.yml",
+              "RelativeToolTip": "backend\\buildspec-docker.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-11-22T15:53:50.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "deploy.sh",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\deploy.sh",
+              "RelativeDocumentMoniker": "backend\\deploy.sh",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\deploy.sh",
+              "RelativeToolTip": "backend\\deploy.sh",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMEAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2026-11-22T15:53:43.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DEPLOYMENT_GUIDE.md",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\DEPLOYMENT_GUIDE.md",
+              "RelativeDocumentMoniker": "backend\\DEPLOYMENT_GUIDE.md",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\DEPLOYMENT_GUIDE.md",
+              "RelativeToolTip": "backend\\DEPLOYMENT_GUIDE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHgBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-11-22T15:53:28.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "buildspec.yml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\buildspec.yml",
+              "RelativeDocumentMoniker": "backend\\buildspec.yml",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\buildspec.yml",
+              "RelativeToolTip": "backend\\buildspec.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-11-22T15:53:02.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "01_environment.config",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\.ebextensions\\01_environment.config",
+              "RelativeDocumentMoniker": "backend\\.ebextensions\\01_environment.config",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\BDT_Arena\\BDT-Arena-Docker\\backend\\.ebextensions\\01_environment.config",
+              "RelativeToolTip": "backend\\.ebextensions\\01_environment.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-11-22T15:52:52.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "plan-complete-backend-admin-implementation-with-payment,-auth-logging.md [Preview]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\.copilot\\plans\\plan-complete-backend-admin-implementation-with-payment,-auth-logging.md",
+              "RelativeDocumentMoniker": "..\\..\\..\\.copilot\\plans\\plan-complete-backend-admin-implementation-with-payment,-auth-logging.md",
+              "ToolTip": "C:\\Users\\Lenovo\\.copilot\\plans\\plan-complete-backend-admin-implementation-with-payment,-auth-logging.md [Preview]",
+              "RelativeToolTip": "..\\..\\..\\.copilot\\plans\\plan-complete-backend-admin-implementation-with-payment,-auth-logging.md [Preview]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-11-22T15:18:42.54Z",
+              "EditorCaption": " [Preview]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
