@@ -11,6 +11,7 @@
     "@capacitor/core": "^7.4.2"
   },
   "devDependencies": {
-    "@capacitor/cli": "^7.4.2"
+    "@capacitor/cli": "^7.4.2",
+    "typescript": "^7.0.2"
   }
 }
