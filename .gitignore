@@ -4,6 +4,7 @@ build/
 coverage/
 .env
 *.log
+backend/data/
 android-app/node_modules/
 android-app/android/.gradle/
 android-app/android/app/build/
